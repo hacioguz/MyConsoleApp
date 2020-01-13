@@ -5,3 +5,4 @@ bin
 obj
 *.snk
 .template.config
+nupkg

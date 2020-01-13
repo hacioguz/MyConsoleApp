@@ -9,12 +9,16 @@
     <Authors>Haci Oguz &lt;hacioguz@gmail.com&gt;</Authors>
     <Description>Console Application</Description>
     <Company>HaciOguz</Company>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
     <AssemblyOriginatorKeyFile>h0x-ca.snk</AssemblyOriginatorKeyFile>
     <PublicSign>true</PublicSign>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.1</TargetFrameworks>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>h0x-ca</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
     <RepositoryUrl>https://github.com/hacioguz/MyConsoleApp</RepositoryUrl>
+    <PackageVersion>1.0.1</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -22,7 +26,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
+    <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
   </ItemGroup>
   
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
