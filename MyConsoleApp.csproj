@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <SignAssembly>true</SignAssembly>
+    <RootNamespace>HaciOguz.Templates.MyConsoleApp</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>MyConsoleApp</Title>
+    <Authors>Haci Oguz &lt;hacioguz@gmail.com&gt;</Authors>
+    <Description>Console Application</Description>
+    <Company>HaciOguz</Company>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <AssemblyOriginatorKeyFile>h0x-ca.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.1</TargetFrameworks>
+    <RepositoryUrl>https://github.com/hacioguz/MyConsoleApp</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
+  </ItemGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
+</Project>
