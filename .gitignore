@@ -1,7 +1,0 @@
-.idea
-.vs
-.vscode
-bin
-obj
-*.snk
-.template.config
